@@ -1,0 +1,9 @@
+<div class='home__container'>
+    <div class='home__title'>Slater Baby<br>Gender Reveal</div>
+    <div class='home__form'>
+        <div class='home__label'>Enter Passcode:</div>
+        <input class='home__input' #passcode/>
+        <div class='home__error' *ngIf='errorState'>Incorrect Passcode</div>
+        <div class='home__submit' (click)='submit(passcode.value)'>Submit</div>
+    </div>
+</div>
