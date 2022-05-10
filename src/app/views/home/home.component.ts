@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
 
     submit(code) {
         let str = code.toLowerCase();
-        if(str == 'auntiecoco' ){
+        if(str == 'strawberry' ){
             this.router.navigate(['/reveal'], {queryParams: {passcode: str}})
         }
         else {

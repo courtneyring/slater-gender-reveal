@@ -11,7 +11,7 @@ export class GuardService implements CanActivate{
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
       console.log(state);
       console.log(route);
-      if (route.routeConfig.path == 'reveal' && route.queryParams['passcode'] != 'auntiecoco') {
+      if (route.routeConfig.path == 'reveal' && route.queryParams['passcode'] != 'strawberry') {
           return this.router.parseUrl('/');
       }
       return true;
