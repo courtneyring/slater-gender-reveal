@@ -1,6 +1,7 @@
 <div class='reveal__play' (click)='play()' *ngIf='!hideOverlay'>
-    <img src='./assets/images/play-solid.svg' />
-    Play <br> (sound on)
+    <img class='play' src='./assets/images/play-solid.svg' />
+    Click to Play 
+    <div class='reveal__sound'>(sound on <img src='./assets/images/volume.svg' class='volume'/>)</div>
 </div>
 
 <video  controls id='video'>

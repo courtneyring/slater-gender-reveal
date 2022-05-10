@@ -16,7 +16,10 @@ export class RevealComponent implements AfterViewInit {
 
     ngAfterViewInit(): void {
         this.vid = document.getElementById('video');
-        this.vid.onended = () => this.videoEnded = true;
+        this.vid.onended = () => {
+            this.vid.webkitExitFullScreen();
+            this.videoEnded = true;
+        }
     }
 
     play() {
