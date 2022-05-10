@@ -1,1 +1,17 @@
-<p>reveal works!</p>
+<div class='reveal__play' (click)='play()' *ngIf='!hideOverlay'>
+    <img src='../../../assets/images/play-solid.svg' />
+    Play
+</div>
+
+<video  controls id='video'>
+    <source src='../../../assets/videos/gender-reveal.mp4' type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+<div  class='reveal__text' *ngIf='videoEnded'>
+    <div class='reveal__header'>Congrats Ashley and Bobby!</div>
+    <div class='reveal__subheader'>
+        Can't wait to meet your newest addition! <br>
+        From your favorite sister, SIL, <br>and Auntie - </div>
+    <div class='reveal__signature'>Courtney (Coco)</div>
+</div>
